@@ -33,4 +33,4 @@ OPTIONAL/BONUS - Create a method for the parking lot class that maps vehicles to
 3.4 run the `main.py` file
 
 3.5 You can change the parking lot properties like area and parking slot size in the `ParkingLot` object creation
->ParkingLot(area=2000,parking_lot_area=96)
+>ParkingLot(area=2000,parking_slot_area=96)
