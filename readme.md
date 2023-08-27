@@ -21,8 +21,16 @@ OPTIONAL/BONUS - Create a method for the parking lot class that maps vehicles to
 
 #### [Optional] 3. Configure AWS
 
-3.1     [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html]
+3.1 Configure AWS Cli as per docs
+
+[https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html]
+
 3.2 After installing, open a terminal and run:
 > aws configure
 
 3.3 You'll be prompted to enter your AWS Access Key ID, Secret Access Key, default region, and output format. Follow the prompts to complete the configuration.
+
+3.4 run the `main.py` file
+
+3.5 You can change the parking lot properties like area and parking slot size in the `ParkingLot` object creation
+>ParkingLot(area=2000,parking_lot_area=96)
