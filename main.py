@@ -7,7 +7,7 @@ from botocore.client import ClientError
 
 FileName="parking_data.json"
 class ParkingLot:
-    def __init__(self,area,parking_lot_area=96) -> None:
+    def __init__(self,area,parking_lot_area) -> None:
         self.area = area
         self.slots_count=self.area//parking_lot_area
         self.slots = [None]* self.slots_count
@@ -50,8 +50,8 @@ def upload_file(file_name, bucket, object_name=None):
     print("File Uploaded to S3")
 
 def main():
-    parking_lot = ParkingLot(area=2000)
-    no_of_car= 10
+    parking_lot = ParkingLot(area=2000,parking_lot_area=96)
+    no_of_car= int(input("Enter the number of cars :"))
     cars=[]
     for i in range (no_of_car):
         no_plate = random.randint(1000000,9999999)
